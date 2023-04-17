@@ -1,0 +1,12 @@
+package entities;
+
+public class Rectangle {
+
+	public double x;
+	public double y;
+	public double total;
+	
+	public double area() {
+		return total = x * y;
+	}
+}

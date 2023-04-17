@@ -1,0 +1,28 @@
+package application;
+import java.util.Locale;
+import java.util.Scanner;
+import entities.Rectangle;
+
+public class Program {
+
+	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Rectangle width, height;
+		width = new Rectangle();
+		height = new Rectangle();
+		
+		System.out.println("Enter rectangle width and height:");
+		width.width = sc.nextDouble();
+		height.height = sc.nextDouble();
+		
+		System.out.println("AREA: " + Rectangle.area());
+		System.out.println("PERIMETER: " + Rectangle.perimeter());
+		System.out.println("DIAGONAL: %d" + Rectangle.diagonal());
+		sc.close();
+	}
+
+	
+
+}

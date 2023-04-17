@@ -1,0 +1,31 @@
+package introducao_objetos_1;
+import java.util.Locale;
+import java.util.Scanner;
+import entities.Rectangle;
+
+public class application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		Rectangle width, height;
+		width = new Rectangle();
+		height = new Rectangle();
+		
+		System.out.println("Enter rectangle width and height:");
+		width.width = sc.nextDouble();
+		height.height = sc.nextDouble();
+		
+		double area = Rectangle.area();
+		double perimeter = Rectangle.perimeter();
+		double diagonal = Rectangle.diagonal();
+		
+		System.out.println("AREA: %d" area);
+		System.out.println("PERIMETER: %d" perimeter);
+		System.out.println("DIAGONAL: %d" diagonal);
+		sc.close();
+	}
+
+}

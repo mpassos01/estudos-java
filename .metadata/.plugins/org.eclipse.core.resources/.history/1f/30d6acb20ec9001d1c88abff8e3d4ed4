@@ -1,0 +1,8 @@
+package entities;
+
+public class Student {
+
+	public double primeiro;
+	public double segundo;
+	public double terceiro;
+}

@@ -1,0 +1,15 @@
+package entities;
+
+public class Student {
+	
+	public String nome;
+	public double primeiro;
+	public double segundo;
+	public double terceiro;
+	
+	public double soma() {
+		return primeiro + segundo + terceiro;
+	}
+	
+	
+}
